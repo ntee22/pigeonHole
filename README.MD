@@ -38,4 +38,4 @@ The class also includes a constructor that initializes the ChromeDriver instance
 The PigeonholePage class defines the page objects for the Pigeonhole website, including the event passcode field, attendee code field, Q&A session button, question input box, comment input box, and upvote button.
 
 Credits
-This project was created by [Your Name] and is licensed under the MIT License.
+This project was created by Nhut Kelvin and is licensed under the MIT License.
