@@ -1,9 +1,5 @@
 package com.pigeonhole.pigeonhole;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-
 public class pigeonHoleMain {
     public static void main(String[] args) throws InterruptedException {
         String browserName = "chrome"; // or "firefox"

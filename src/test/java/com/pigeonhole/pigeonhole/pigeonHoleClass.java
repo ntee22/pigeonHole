@@ -1,6 +1,5 @@
 package com.pigeonhole.pigeonhole;
 
-import com.codeborne.selenide.webdriver.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class pigeonHoleClass {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public pigeonHoleClass(String browserName){
         this.driver = webDriverFactory.create(browserName);
