@@ -64,7 +64,7 @@ public class pigeonHoleClass {
         askQuestionButton.click();
         Thread.sleep(2000);
         // Get text of question asked
-        WebElement questionAsked = driver.findElement(By.xpath("//div[6]/div/section/div[3]/div[1]/div"));
+        WebElement questionAsked = driver.findElement(By.xpath("//div[3]/div[1]/div/div[2]/div[1]/div[2]"));
         String questionAskedText = questionAsked.getText();
         // Check if the comment is displayed at the top of the list
         if (questionAskedText.equals(question)) {
@@ -100,7 +100,7 @@ public class pigeonHoleClass {
         }
     }
 
-    public void clickUpvote(){
+    public void clickUpvote() throws InterruptedException {
         // Find upvote button
         WebElement upvoteButton = driver.findElement(By.xpath("//div[1]/div[3]/button[1]/span[1]"));
 
@@ -110,7 +110,7 @@ public class pigeonHoleClass {
 
         // Click button upvote
         upvoteButton.click();
-
+        Thread.sleep(3000);
         // Get the initial after click upvote
         WebElement afterUpvoteCount = driver.findElement(By.xpath("//div/div[2]/div/div/div[1]/div[3]/button[1]"));
         int initAfterUpvoteCount = Integer.parseInt(afterUpvoteCount.getText());

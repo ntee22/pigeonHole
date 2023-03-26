@@ -25,13 +25,13 @@ public class pigeonHoleMain {
         pWeb.enterQA();
 
         // 5. Type in the event passcode and click on the `Ask` button. (A popup modal should appear, and you should see your question posted in the list)
-        pWeb.askQuestion("Test ask");
+        pWeb.askQuestion("PIGEONQATEST");
 
         // 6. Click on the `Add a comment` button under your question (The page should navigate to the comments page)
         pWeb.clickToComment();
 
         // 7. Type in the event passcode and click on the comment button (The popup should appear and close. Your comment appears in the list)
-        pWeb.addComment("Test comment");
+        pWeb.addComment("PIGEONQATEST");
 
         // 8. Upvote on the comment you have just posted (The comment upvote count should increase by 1)
         pWeb.clickUpvote();
