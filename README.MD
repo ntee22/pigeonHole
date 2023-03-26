@@ -13,13 +13,14 @@ This project uses Selenium and Java to automate the following steps for a Pigeon
 # **Requirements**
 * Java 8 or higher
 * Maven
-* ChromeDriver (And Chrome Browser version 111)
+* ChromeDriver (or Firefox Driver)
 
 # **Getting Started**
 1. Clone this repository to your local machine.
 2. Open the project in your preferred IDE.
-3. Modify the PigeonholeEventAutomation.java file to include the event passcode, attendee code, question, and comment that you want to automate.
-4. Run the pigeonHoleMain.java file to execute the automation.
+3. Download Chrome or Firefox Driver and edit file path in webDriverFactory.java
+4. Modify the PigeonholeEventAutomation.java file to include the event passcode, attendee code, question, and comment that you want to automate.
+5. Run the pigeonHoleMain.java file to execute the automation.
 
 # **Code Explanation**
 The PigeonholeEventAutomation.java file contains a Java class PigeonholeEventAutomation that automates the steps described above using the Page Object Model (POM) pattern.
