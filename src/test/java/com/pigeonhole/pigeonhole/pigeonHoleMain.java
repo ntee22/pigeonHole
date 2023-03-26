@@ -1,5 +1,4 @@
 package com.pigeonhole.pigeonhole;
-
 public class pigeonHoleMain {
     public static void main(String[] args) throws InterruptedException {
         String browserName = "chrome"; // or "firefox"

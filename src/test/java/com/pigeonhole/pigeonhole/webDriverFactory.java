@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-
 public class webDriverFactory {
     public static RemoteWebDriver create(String browserName){
         if ("chrome".equals(browserName)){
