@@ -6,11 +6,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class pigeonHoleMain {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "/Users/kelvin/Nhut/AquaProjects/pigeonhole/drivers/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        WebDriver driver = new ChromeDriver(options);
-        pigeonHoleClass pWeb = new pigeonHoleClass(driver);
+        String browserName = "chrome"; // or "firefox"
+
+        pigeonHoleClass pWeb = new pigeonHoleClass(browserName);
+//        WebDriver driver = new ChromeDriver(options);
+//        pigeonHoleClass pWeb = new pigeonHoleClass(driver);
 
         // 1. Go to https://pigeonhole.at (Make sure the page is loaded)
         pWeb.goToHomePage();

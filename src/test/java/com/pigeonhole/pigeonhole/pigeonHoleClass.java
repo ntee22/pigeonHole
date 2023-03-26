@@ -1,5 +1,6 @@
 package com.pigeonhole.pigeonhole;
 
+import com.codeborne.selenide.webdriver.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -9,10 +10,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class pigeonHoleClass {
-    private final WebDriver driver;
+    private WebDriver driver;
 
-    public pigeonHoleClass(WebDriver driver){
-        this.driver = driver;
+    public pigeonHoleClass(String browserName){
+        this.driver = webDriverFactory.create(browserName);
     }
 
     public void goToHomePage(){
@@ -49,7 +50,7 @@ public class pigeonHoleClass {
     }
 
     public void enterQA (){
-        WebElement qaSessionButton = driver.findElement(By.xpath("//*[contains(text(), 'Enter this Q&A')]"));
+        WebElement qaSessionButton = driver.findElement(By.xpath("//div/nav/div[2]/div[1]/section/div/div[5]/a"));
         qaSessionButton.click();
         //*[@id="tabpanel-"]/div[2]/div/nav/div[2]/div[1]/section/div/div[5]/a/span[1]
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -86,6 +87,7 @@ public class pigeonHoleClass {
     public void addComment(String comment) throws InterruptedException {
         WebElement addCommentField = driver.findElement(By.xpath("//div/div[1]/div[1]/textarea"));
         addCommentField.sendKeys(comment);
+        Thread.sleep(2000);
         WebElement commentButton = driver.findElement(By.xpath("//div/div[1]/div[2]/div[2]/div[2]/button"));
         commentButton.click();
         Thread.sleep(2000);
