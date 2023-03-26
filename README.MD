@@ -1,4 +1,4 @@
-##Pigeonhole Event Automation
+## Pigeonhole Event Automation
 
 This project uses Selenium and Java to automate the following steps for a Pigeonhole event:
 1. Go to https://pigeonhole.at (Make sure the page is loaded)
@@ -10,18 +10,18 @@ This project uses Selenium and Java to automate the following steps for a Pigeon
 7. In the input textfield, type in the event passcode and click on the comment button (The popup should appear and close. Your comment appears in the list)
 8. Upvote on the comment you have just posted (The comment upvote count should increase by 1)
 
-#**Requirements**
+# **Requirements**
 * Java 8 or higher
 * Maven
 * ChromeDriver (And Chrome Browser version 111)
 
-#**Getting Started**
+# **Getting Started**
 1. Clone this repository to your local machine.
 2. Open the project in your preferred IDE.
 3. Modify the PigeonholeEventAutomation.java file to include the event passcode, attendee code, question, and comment that you want to automate.
 4. Run the pigeonHoleMain.java file to execute the automation.
 
-#**Code Explanation**
+# **Code Explanation**
 The PigeonholeEventAutomation.java file contains a Java class PigeonholeEventAutomation that automates the steps described above using the Page Object Model (POM) pattern.
 The class includes the following methods:
 * initializeDriver(): Creates a new ChromeDriver instance and sets the driver options.
@@ -37,5 +37,5 @@ The class includes the following methods:
 The class also includes a constructor that initializes the ChromeDriver instance and sets up the page objects using the PageFactory class.
 The PigeonholePage class defines the page objects for the Pigeonhole website, including the event passcode field, attendee code field, Q&A session button, question input box, comment input box, and upvote button.
 
-#**Credits**
+# **Credits**
 This project was created by Nhut Kelvin and is licensed under the MIT License.
