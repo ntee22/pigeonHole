@@ -3,7 +3,7 @@
 This project uses Selenium and Java to automate the following steps for a Pigeonhole event:
 1. Go to https://pigeonhole.at (Make sure the page is loaded)
 2. Under `Enter Event Passcode` field, type in event passcode and click on the Attendee code field should appear arrow button (Attendee code field should appear)
-3. Under `Enter Event Passcode` field, type in the attendee code and click on the (The page should navigate to an agenda arrow button page.)
+3. Under `Enter Attendee Code` field, type in the attendee code and click on the (The page should navigate to an agenda arrow button page.)
 4. Enter the Q&A session named `Sample Q&A` by clicking on `Enter this Q&A` (The page should navigate into the Q&A button. session.)
 5. In the input box, type in the event passcode and click on the `Ask` button. (A popup modal should appear and you should see your question posted in the list)
 6. Under your question, click on the `Add a comment` button (The page should navigate to the comments page)
